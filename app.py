@@ -48,7 +48,7 @@ for column in columns_to_replace:
    
    
 # Creating the header and subheader of app
-st.header('Web App :rainbow[**VEHICLES MARKETPLACE**]', divider='rainbow')
+st.header('Web App :rainbow[**VEHICLES MARKETPLACE**]')
 st.subheader(':violet[Use this app to explore the vehicles market in US]')
 
 urllib.request.urlretrieve(
