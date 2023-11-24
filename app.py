@@ -1,7 +1,7 @@
+import urllib.request
 import pandas as pd
 import streamlit as st
 import plotly.express as px
-import urllib.request
 from PIL import Image
 
 df=pd.read_csv('vehicles_us.csv')
@@ -46,10 +46,8 @@ df['odometer'] = df['odometer'].round()
 df['is_4wd'] = df['is_4wd'].astype(str)
 
 # Replacing NaN values by "unknown"
-columns_to_replace=['paint_color', 'is_4wd']
-for column in columns_to_replace:
-   df[column]=df[column].fillna('unknown')
-   
+df['paint_color']=df['paint_color'].fillna('unknown')
+df['is_4wd']=df['is_4wd'].replace('nan', 'unknown')
    
 # Creating the header and subheader of app
 st.header('Web App :rainbow[**VEHICLES MARKETPLACE**]')
