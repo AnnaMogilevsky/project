@@ -41,6 +41,10 @@ df['cylinders'] = df['cylinders'].fillna(df.groupby(['model'])
 # Filling NaN values
 df['odometer'] = df['odometer'].fillna(df.groupby(['model_year'])['odometer'].transform('median'))
 df['odometer'] = df['odometer'].round()
+
+# Transforming "is_4wd" column to object type
+df['is_4wd'] = df['is_4wd'].astype(str)
+
 # Replacing NaN values by "unknown"
 columns_to_replace=['paint_color', 'is_4wd']
 for column in columns_to_replace:
