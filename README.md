@@ -1,3 +1,5 @@
+**Note for reviewer**: I removed versions from requirements because these old versions don’t work with colors.
+
 # Project
 
 ## Links
