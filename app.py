@@ -50,7 +50,7 @@ df['paint_color']=df['paint_color'].fillna('unknown')
 df['is_4wd']=df['is_4wd'].replace('nan', 'unknown')
    
 # Creating the header and subheader of app
-st.header('Web App :rainbow[**VEHICLES MARKETPLACE**]')
+st.header('Web App :red[**VEHICLES MARKETPLACE**]')
 st.subheader(':violet[Use this app to explore the vehicles market in US]')
 
 urllib.request.urlretrieve(
