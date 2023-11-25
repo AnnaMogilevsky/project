@@ -3,8 +3,7 @@
 # Project
 
 ## Links
-Link to GitHub repository: https://github.com/AnnaMogilevsky/project
-URL of app on Render: https://cars-marketplace-n7os.onrender.com
+Link to GitHub repository: https://github.com/AnnaMogilevsky/project  \nURL of app on Render: https://cars-marketplace-n7os.onrender.com
 
 # Project Description
 
